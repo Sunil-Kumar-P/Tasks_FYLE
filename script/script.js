@@ -53,4 +53,6 @@ document.addEventListener("DOMContentLoaded", function() {
             toast.className = toast.className.replace(" show", "");
         }, 4500);
     }
+
+
 });
