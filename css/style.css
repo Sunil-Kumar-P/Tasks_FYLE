@@ -1,0 +1,193 @@
+.d-flex {
+    display: flex;
+}
+
+.my-5 {
+    margin-top: 100px;
+}
+
+.left_col {
+    margin-top: 173px;
+    margin-left: 376px;
+    margin-right: 50px;
+    width: 600px;
+}
+
+.top_heading {
+    text-align: justify;
+    font: normal normal 600 30px;
+    color: #ff3147;
+    font-size: 30px;
+}
+
+.hero_text {
+    text-align:justify;
+    font-size: 60px;
+    font-weight: bold;
+    max-width: 20ch; 
+}
+
+.hero_paragraph {
+    font-size: 16px;
+    color: #000000;
+    max-width: 50ch; 
+    overflow-wrap: break-word; 
+}
+
+
+.contact {
+    border: none;
+    width: 160px;
+    height: 50px;
+    font: normal normal 600 14px/26px 'Poppins';
+    letter-spacing: 1.4px;
+    color: #FFFFFF;
+    background: #FF3147;
+    border-radius: 2px;
+    cursor: pointer;
+}
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 30px; /* Increased padding for better spacing */
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add box shadow for depth */
+    width: 80%;
+    max-width: 600px; /* Adjust width as per your design */
+    border-radius: 5px;
+}
+
+.modal-header {
+    background-color: white; /* Header background color */
+
+    padding: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+/* Define the pinkish color */
+.checkbox:checked {
+    background-color: pink;
+    border-color: pink; /* Optional: change border color to match */
+}
+.close {
+    color: white;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #ccc; /* Change close button color on hover */
+}
+
+.input_box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.checkbox {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.label_checkbox {
+    color: #616678;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.submit_btn {
+    border: none;
+    height: 40px;
+    padding: 0 20px;
+    color: white;
+    background: #f44356;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Successful Alert notification toast */
+.toast {
+    visibility: hidden;
+    max-width: 100px;
+    height: 50px;
+    margin: auto;
+    background-color: #ff3366;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    font-size: 17px;
+    white-space: nowrap;
+    padding: 10px; /* Adjust padding for better content fit */
+}
+
+.toast .img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    float: left;
+    line-height: 50px;
+    background-color: #111;
+    color: white;
+}
+
+.toast .desc {
+    color: white;
+    padding: 10px; /* Adjust padding for better content fit */
+}
+
+.toast.show {
+    visibility: visible;
+    animation: fadein 0.5s, expand 0.5s 0.5s, stay 3s 1s, shrink 0.5s 4s, fadeout 0.5s 4.5s;
+}
+
+@keyframes fadein {
+    from { bottom: 0; opacity: 0; }
+    to { bottom: 30px; opacity: 1; }
+}
+
+@keyframes expand {
+    from { min-width: 50px; }
+    to { min-width: 350px; }
+}
+
+@keyframes stay {
+    from { min-width: 350px; }
+    to { min-width: 350px; }
+}
+
+@keyframes shrink {
+    from { min-width: 350px; }
+    to { min-width: 50px; }
+}
+
+@keyframes fadeout {
+    from { bottom: 30px; opacity: 1; }
+    to { bottom: 60px; opacity: 0; }
+}

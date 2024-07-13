@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Section</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="d-flex my-5">
+        <div class="left_col">
+            <h4 class="top_heading">AWARD WINNING</h4>
+            <h1 class="hero_text">DIGITAL MARKETING AGENCY</h1>
+            <p class="hero_paragraph">
+                Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed lacus
+                nec risus finibus feugiat et fermentum.
+            </p>
+            <button type="button" class="contact" id="contactButton">
+                Contact Us
+            </button>
+        </div>
+        <div class="columns">
+            <img src="img/hero.png" alt="hero"/>
+        </div>
+    </div>
+
+    <div id="exampleModal" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" id="modalToggler">×</button>
+                    <h3 class="modal-title">Talk to us</h3>
+                </div>
+                <form class="modal-body p-3 m-3" id="contactForm" method="POST">
+                    <input type="email" class="input_box" id="email" name="email" placeholder="Work email*" required>
+                    <div class="d-flex mt-3">
+                        <input type="text" class="input_box" placeholder="First name*" id="firstName" name="firstName" required>
+                        <input type="text" class="input_box" placeholder="Last name*" id="lastName" name="lastName" required>
+                    </div>
+                    <div class="d-flex mt-3">
+                        <input class="checkbox" type="checkbox" id="gridCheck1" required>
+                        <label class="label_checkbox" for="gridCheck1">I agree to Fyle's terms and conditions, and provide consent to send me communication.</label>
+                    </div>
+                    <button type="submit" class="submit_btn">Contact Us</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast" id="toast">
+        <div class="img">✔</div>
+        <div class="desc" id="toastDesc"></div>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
